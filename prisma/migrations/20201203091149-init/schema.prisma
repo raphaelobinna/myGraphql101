@@ -1,0 +1,27 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+datasource db {
+  provider = "postgresql"
+  url = "***"
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Books {
+  id      Int      @default(autoincrement()) @id
+  Author_Name   String   @unique
+  Title    String
+  Comments   Comment[]
+}
+
+model Comment {
+  id        Int      @default(autoincrement()) @id
+  createdAt DateTime @default(now())
+  comment   String
+  published Boolean  @default(false)
+  author_name    Books     @relation(fields: [authorId], references: [id])
+  authorId  Int
+}

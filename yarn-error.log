@@ -1,0 +1,46 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add apollo-server
+
+PATH: 
+  C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\Git\cmd;C:\Program Files (x86)\Common Files\Apple\Internet Services\;C:\Program Files\nodejs\;C:\Program Files (x86)\Yarn\bin\;C:\Users\User\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\heroku\bin;C:\Program Files\PostgreSQL\10\bin;C:\Program Files\PostgreSQL\10\data;C:\Users\User\AppData\Roaming\npm;C:\Users\User\AppData\Local\Yarn\bin
+
+Yarn version: 
+  1.22.5
+
+Node version: 
+  14.15.1
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: EPERM: operation not permitted, unlink 'C:\Users\User\Documents\node begin\remake\node_modules\body-parser\node_modules\inherits'
+
+npm manifest: 
+  {
+    "name": "remake",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+      "@prisma/cli": "^2.12.1",
+      "@types/node": "^14.14.10",
+      "ts-node": "^9.1.0",
+      "typescript": "^4.1.2"
+    },
+    "dependencies": {
+      "@prisma/client": "^2.12.1"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
